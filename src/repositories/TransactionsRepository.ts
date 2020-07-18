@@ -1,6 +1,6 @@
 import Transaction from '../models/Transaction';
 
-interface Balance {
+export interface Balance {
   income: number;
   outcome: number;
   total: number;
@@ -20,7 +20,7 @@ class TransactionsRepository {
   }
 
   public all(): Transaction[] {
-    // TODO
+    return this.transactions;
   }
 
   public getBalance(): Balance {
